@@ -1,0 +1,23 @@
+{
+"manifest_version":2,
+"name":"basic",
+"version":"0.0.1",
+"content_scripts":[
+	{	
+		"matches":["<all_urls>"],
+		"js":["content.js"]
+
+	}
+
+],"web_accessible_resources": [
+    "Dotsies.ttf"
+  ],
+
+		"browser_action":{"default_icon":"ico.png", "default_title":"Turn the page into dotsies"},
+
+"background":{
+	"scripts":["background.js"]
+}	
+
+
+}
